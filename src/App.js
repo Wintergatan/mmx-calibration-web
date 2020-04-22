@@ -43,7 +43,7 @@ export default class App extends Component {
           type = "file"
           name = "file"
           onChange = {this.onChangeHandler}
-      />
+        />
       <button disabled={!hasParsedCsv} onClick={()=>{saveAs(this.midiBlob, "parsed-music.midi")}}>Download MIDI</button>
       <button disabled={!hasParsedCsv} onClick={()=>{saveAs(this.svgBlob, "output.svg")}}>Download SVG</button>
       <button disabled={!hasParsedCsv} onClick={()=>{saveAs(this.dxfBlob, "output.dxf")}}>Download DXF</button>
